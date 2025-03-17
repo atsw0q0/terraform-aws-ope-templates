@@ -14,6 +14,7 @@ variable "iam_role_prefix" {
   type = object({
     is_create_iam_role       = optional(bool, false)
     existing_lambda_role_arn = optional(string, null)
+    existing_events_role_arn = optional(string, null)
   })
 }
 
